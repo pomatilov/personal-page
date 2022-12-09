@@ -9,7 +9,7 @@
       @end="onTypeEnd"
     />
 
-    <div class="block" :class="{visible: blocksVisible}">
+    <div class="block" :class="{ visible: blocksVisible }">
       <div class="block__list">
         <p class="block__list_option">{{ $t('skills.systems') }}</p>
         <p class="block__list_option">{{ $t('skills.optimization') }}</p>

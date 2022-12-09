@@ -3,7 +3,7 @@
     <template v-for="locale in availableLocales" :key="locale">
       <a
         class="lang-selector__item"
-        :class="{active: currentLocale === locale}"
+        :class="{ active: currentLocale === locale }"
         :title="locale"
         href="javascript:void(0);"
         @click="

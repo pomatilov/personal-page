@@ -1,4 +1,4 @@
-const {defineConfig} = require('@vue/cli-service');
+const { defineConfig } = require('@vue/cli-service');
 
 const predefinedStyleVariables = [
   '~@/assets/styles/_animations.scss',

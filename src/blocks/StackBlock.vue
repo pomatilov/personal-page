@@ -9,7 +9,7 @@
       @end="onTypeEnd"
     />
 
-    <div class="block" :class="{visible: blocksVisible}">
+    <div class="block" :class="{ visible: blocksVisible }">
       <h2 class="block__heading">{{ $t('stack.backend') }}</h2>
 
       <div class="block__list">
@@ -23,7 +23,7 @@
       </div>
     </div>
 
-    <div class="block" :class="{visible: blocksVisible}">
+    <div class="block" :class="{ visible: blocksVisible }">
       <h2 class="block__heading">{{ $t('stack.frontend') }}</h2>
 
       <div class="block__list">
@@ -40,7 +40,7 @@
       </div>
     </div>
 
-    <div class="block" :class="{visible: blocksVisible}">
+    <div class="block" :class="{ visible: blocksVisible }">
       <h2 class="block__heading">{{ $t('stack.database') }}</h2>
 
       <div class="block__list">
@@ -51,7 +51,7 @@
       </div>
     </div>
 
-    <div class="block" :class="{visible: blocksVisible}">
+    <div class="block" :class="{ visible: blocksVisible }">
       <h2 class="block__heading">{{ $t('stack.other') }}</h2>
 
       <div class="block__list">

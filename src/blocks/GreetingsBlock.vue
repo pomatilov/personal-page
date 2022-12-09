@@ -22,10 +22,10 @@
     <div class="controls">
       <PrimaryButton
         class="button"
-        :class="{visible: showControls}"
+        :class="{ visible: showControls }"
         @click="
           () => {
-            $emit('go', {to: 'stack'});
+            $emit('go', { to: 'stack' });
           }
         "
       >
@@ -34,10 +34,10 @@
 
       <PrimaryButton
         class="button"
-        :class="{visible: showControls}"
+        :class="{ visible: showControls }"
         @click="
           () => {
-            $emit('go', {to: 'skills'});
+            $emit('go', { to: 'skills' });
           }
         "
       >

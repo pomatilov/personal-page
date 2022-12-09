@@ -1,4 +1,4 @@
-import {constants} from '@/constants';
+import { constants } from '@/constants';
 
 const links = {
   github: `https://github.com/${constants.github_user}`,
@@ -43,7 +43,7 @@ export default {
       skills: 'Умения и навыки',
     },
 
-    link: {...links},
+    link: { ...links },
 
     title: "@:personal.name{','} @:personal.position",
     description: "@:skills.systems{','} @:skills.docker{','} @:skills.optimization",
@@ -92,7 +92,7 @@ export default {
       skills: 'Skills',
     },
 
-    link: {...links},
+    link: { ...links },
 
     title: "@:personal.name{','} @:personal.position",
     description: "@:skills.systems{','} @:skills.docker{','} @:skills.optimization",

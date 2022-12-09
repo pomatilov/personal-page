@@ -22,10 +22,10 @@
     <div class="controls">
       <PrimaryButton
         class="button"
-        :class="{visible: showControls}"
+        :class="{ visible: showControls }"
         @click="
           () => {
-            $router.push({name: 'home'});
+            $router.push({ name: 'home' });
           }
         "
       >

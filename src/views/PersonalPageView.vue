@@ -25,8 +25,8 @@ import GreetingsBlock from '@/blocks/GreetingsBlock.vue';
 import SkillsBlock from '@/blocks/SkillsBlock.vue';
 import StackBlock from '@/blocks/StackBlock.vue';
 
-import {PageTitleMixin} from '@/mixins/pageTitleMixin';
-import {scrollToElement} from '@/utils/scrollToElement';
+import { PageTitleMixin } from '@/mixins/pageTitleMixin';
+import { scrollToElement } from '@/utils/scrollToElement';
 
 const VIEW_HOME = 'home';
 const VIEW_STACK = 'stack';
@@ -73,7 +73,7 @@ export default {
   },
 
   methods: {
-    onGoClick({to}) {
+    onGoClick({ to }) {
       let element = null;
 
       if (to) {
@@ -89,7 +89,7 @@ export default {
       }
 
       setTimeout(() => {
-        scrollToElement(element, {behavior: 'smooth'});
+        scrollToElement(element, { behavior: 'smooth' });
       }, 100);
     },
 

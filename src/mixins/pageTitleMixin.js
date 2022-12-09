@@ -1,5 +1,7 @@
 /* eslint-disable func-names */
 /* eslint-disable object-shorthand */
+import Cookies from 'js-cookie';
+
 export const PageTitleMixin = {
   head: {
     title: function () {
@@ -22,9 +24,9 @@ export const PageTitleMixin = {
 
     dynamicMeta() {
       return [
-        {name: 'title', content: this.$t('title')},
-        {name: 'description', content: this.$t('description')},
-        {name: 'keywords', content: this.$t('keywords')},
+        { name: 'title', content: this.$t('title') },
+        { name: 'description', content: this.$t('description') },
+        { name: 'keywords', content: this.$t('keywords') },
       ];
     },
   },
@@ -35,6 +37,14 @@ export const PageTitleMixin = {
         this.updateHead();
       },
     },
+  },
+
+  created() {
+    const locale = Cookies.get('locale');
+
+    if (locale && locale !== this.$i18n.locale) {
+      this.$i18n.locale = locale;
+    }
   },
 };
 

@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer" :class="{fixed}">
+  <footer class="footer" :class="{ fixed }">
     <div class="footer__content">
       <div class="copyright">
         {{ $t('copyright') }}
